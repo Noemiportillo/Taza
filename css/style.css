@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.max-view-height {
+    height: 100vh;
+
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+#container-tacita {
+    width: 50%; /*Mantener el ancho a la mitad del padre*/
+}
+
+#container-tacita > video { /*Para decir a todas las etiqueta de video del id de "container-tacita con el simbolo > */
+    width: 100%;
+}
+
+.display-none {
+    display: none;
+}
+
+#container-botones-tacita {
+    padding: 10px 0; /*top/bottom left/right*/
+    width: 50%;
+    justify-content: space-around;
+}
+      
+.boton {
+    background-color: white; /*fondo*/
+    border: 1px solid rosybrown;
+    border-radius: 20px; /* redondeo de borde */
+    box-shadow: rgb(255, 197, 197) 2px 2px 0 0; /*sombra profundidad */
+    color: rgb(122, 30, 30); /*color letra */
+    cursor: pointer; /*forma mano cursor */
+    display: inline-block; /* genera una caja de elemento de bloque que fluye como si fuera una sola caja en línea */
+    font-weight: 550; /*ancho letra */
+    font-size: 18px; /*tamaño letra */
+    padding: 0 10px; /*relleno*/
+    line-height: 50px; /* alto de la caja */
+    text-align: center; /*texto centrado */
+    text-decoration: none; /*subrayado */
+    user-select: none; /*controla si el usuario puede seleccionar el texto */
+}
+
+.boton:hover  {
+    background-color: rgb(240, 154, 233); /*colorea el boton */
+}
+
+.boton:active {
+    box-shadow: #c5adf1 2px 2px 0 0; /* añade efectos de sombra alrededor del marco */ 
+    transform: translate(2px, 2px); /* recoloca un elemento en el eje horizontal y/o vertical */
+}
+
+
